@@ -37,6 +37,7 @@
 ## Overview
 
 ![screenshot](https://github.com/josuke0227/responsive404/blob/master/screenShot.png)
+Demo page(https://epic-jones-e23684.netlify.app/)
 
 This is elementally 404 Not Found page with responsive media qyery rayout comes with
 no framework or thirdparty library.
@@ -50,6 +51,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@your-username](https://{github.com/josuke0227})
+- Twitter [@your-twitter](https://{twitter.com/massivetsubute})
