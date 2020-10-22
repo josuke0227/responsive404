@@ -5,18 +5,37 @@
 }
 
 body {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  padding: 1rem;
-  font-size: 1.4rem;
+  flex: 15vh;
   font-family: "Inconsolata", sans-serif;
+  padding: 1rem;
+  font-size: 2rem;
 }
 
 main {
-  padding: 10rem;
   font-family: "Space Mono", sans-serif;
+
+  display: flex;
+  flex: 80vh;
+}
+
+.img-window {
+  flex: 1;
+
+  background-image: image();
+  padding: 0 3rem 0 3rem;
+}
+
+img {
+  width: 100%;
+}
+
+.text-window {
+  flex: 1;
 }
 
 .text-window h1,
@@ -25,7 +44,7 @@ p {
 }
 
 .text-window > h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .text-window > p {
@@ -46,27 +65,53 @@ button:hover {
   cursor: pointer;
 }
 
-section {
-  display: flex;
-}
-
-.text-window {
-  flex: 1;
-}
-
-img {
-  flex: 1;
-  max-width: 500px;
-}
-
 footer {
+  flex: 5vh;
   text-align: center;
-  margin-bottom: 1rem;
   font-family: "Montserrat";
+  padding: 0.5rem;
 }
 
-@media (max-width: 900px) {
-  section {
+@media (max-width: 400px) {
+  * {
+    font-size: xx-small;
+  }
+
+  img {
+    padding: 1rem 0 !important;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 740px) {
+  header {
+    flex: 5vh;
+    font-size: 1.5rem;
+  }
+
+  main {
+    flex: 90vh;
+  }
+
+  main {
     flex-direction: column;
+  }
+
+  img {
+    width: 100%;
+    padding: 0 10rem 0 10rem;
+  }
+
+  .text-window {
+    text-align: center;
+  }
+
+  .text-window p {
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    font-size: small;
   }
 }
